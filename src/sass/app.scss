@@ -1,1 +1,61 @@
+// 1. Import the initial variables
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Add a serif family
+$family-sans-serif: 'Open-Sans', Helvetica, sans-serif;
+$family-primary: $family-sans-serif;
+
+$blue: #1A535C;
+$light-blue: #4ECDC4;
+$off-white: #F7FFF7;
+$red: #FF6B6B;
+$yellow: #FFE66D;
+$blue-darker: #113338;
+
+$primary: $blue;
+
+//Override button
+$button-color: $blue;
+$button-background-color: $yellow;
+$button-border-color: $blue-darker;
+$link-hover: #308997;
+$link-hover-border: #308997;
+.is-rounded {
+    border-radius: 8px;
+}
+$title-color: $blue;
+$footer-background-color: $blue;
+$text: $blue;
+$content-heading-color: $blue;
+
+#homepage-blog {
+    background-color: $light-blue;
+}
+
+.footer p {
+    color: $yellow;
+}
+
+.footer {
+
+    .content {
+        h2 {
+            color: $off-white;
+        }
+        .svg-inline--fa {
+            color: $off-white;
+        }
+        .icon {
+            margin: 30px;
+        }
+    }
+    
+    
+}
+
 // ...
+@import '~bulma/bulma';
+
+.has-text-yellow {
+    color: $yellow !important; }

@@ -1,8 +1,33 @@
 {{ define "main" }}
 
-    <article>
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
-    </article>
+<article>
+{{if .Params.header}}
+<section class="hero is-medium is-primary is-bold" style="background: url('{{.Params.header}}'); background-size: cover; background-position: center; ">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              {{.Title}}
+            </h1>
+          </div>
+        </div>
+      </section>
 
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                    {{ .Content }}
+            </div>
+        </div>
+        </section>
+{{else}}
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h2 class="title is-2">{{.Title}}</h2>
+            {{.Content}}
+        </div>
+    </div>
+</section>
+    </article>
+{{end}}
 {{ end }}

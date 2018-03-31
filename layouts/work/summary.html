@@ -1,0 +1,11 @@
+<div class="column">
+        <img src="{{.Params.thumbnail}}">
+        <h3 class="title is-3">{{.Title}}</h3>
+        <span>{{.Date.Format "2006-01-02"}}</span>
+        <div class="content">
+            <p>{{.Summary}}</p>
+        </div>
+
+        <a href="{{.Permalink}}">READ MORE</a>
+
+    </div>

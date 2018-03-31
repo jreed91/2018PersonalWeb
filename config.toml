@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "{TITLE}"
+title = ""
 
 enableRobotsTXT = true
 disableAliases = true

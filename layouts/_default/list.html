@@ -1,12 +1,33 @@
 {{ define "main" }}
-    
+<div class="container">
+
     {{ range .Paginator.Pages }}
+    <section class="section">
         <article>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            {{ .Content }}
+            <h2 class="title is-2">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            {{ .Summary }}
         </article>
+        <br>
+        <a href="{{.Permalink}}">READ MORE</a>
+    </section>
+
+    {{ end }} 
+    <section class="section">
+    <nav class="pagination" role="navigation" aria-label="pagination">
+    {{ if .Paginator.HasPrev }}
+
+        <a class="pagination-previous" href="{{ .Paginator.Prev.URL }}">Previous</a>
+        {{ else}}
+        <a class="pagination-previous" href="" disabled>Previous</a>
+        {{ end }} 
+        {{ if .Paginator.HasNext }}
+        <a class="pagination-next" href="{{ .Paginator.Next.URL }}">Next page</a>
+        {{ else }}
+        <a class="pagination-next" href="" disabled>Next page</a>
+        {{ end }}
+    </nav>
+</section>
+    </div>
     {{ end }}
-
-    {{ template "_internal/pagination.html" . }}
-
-{{ end }}
