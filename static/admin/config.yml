@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: repo
+  repo: jreed91/2018PersonalWeb
   branch: master
   
 media_folder: "static/uploads"
