@@ -1,6 +1,6 @@
 ---
 title: Hum Track
-date: 2018-03-31T00:00:00-05:00
+date: 2018-03-31T05:00:00.000Z
 thumbnail: /images/desktop.png
 header: /images/patrick-fore-379149-unsplash.jpg
 ---
@@ -12,4 +12,4 @@ After you have added a new service for your vehicle, you can set up a reminder f
 
 Sign up below:
 
-`https://www.humtrack.com/`
+<https://www.humtrack.com/>
